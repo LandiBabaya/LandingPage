@@ -1,0 +1,118 @@
+:root {
+  --purple: #21075f;
+  --lightpurple: #e0dff6;
+  --darkpink: #9d064a;
+}
+
+body {
+  margin: 0px;
+  display: flex;
+  flex-direction: column;
+}
+.header {
+  background-color: var(--purple);
+  width: 100%;
+  color: var(--lightpurple);
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: stretch;
+}
+
+.header-navbar {
+  /* display: flex; */
+  /* align-items: center; */
+}
+
+ul {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+  display: flex;
+  flex: 1;
+  justify-content: space-around;
+}
+
+li {
+  color: var(--lightpurple);
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.header-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.header-content .header-right-content img {
+  width: 600px;
+  height: 300px;
+  border-radius: 2em;
+}
+
+@media (max-width: 600px) {
+  .header-content .header-right-content img {
+    width: 300px;
+    margin-top: 10px;
+  }
+}
+.header-left-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+h4 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 1400px;
+  margin: 10px auto 50px auto;
+}
+
+.projects-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.projects-cards > .card {
+  width: 200px;
+  height: 200px;
+  border-radius: 2em;
+  background-color: var(--purple);
+}
+
+/* quote  Section*/
+.quote {
+  min-height: 200px;
+
+  margin: auto;
+  background-color: var(--lightpurple);
+  color: var(--purple);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+  padding: 0 20px 0 20px;
+  border-radius: 2em;
+}
+
+footer {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--purple);
+  background-color: var(--lightpurple);
+}
